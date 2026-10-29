@@ -12,11 +12,31 @@ To use the Data Encryption Standard (DES) algorithm for a practical application,
 4. DES applies initial and final permutations along with 16 rounds of substitution and permutation transformations to produce ciphertext.
 
 ## Program:
+~~~
+#include <stdio.h>
+#include <stdint.h>
 
+uint64_t IP[] = {
+58,50,42,34,26,18,10,2,60,52,44,36,28,20,12,4,
+62,54,46,38,30,22,14,6,64,56,48,40,32,24,16,
+56,48,40,32,24,16,8,0,58,50,42,34,26,18,10,2
+};
+
+int main() {
+    printf("DES Encryption Demonstration\n");
+    printf("Plaintext: HELLO123\n");
+    printf("Key: 12345678\n");
+
+    printf("Encryption and decryption require the complete DES algorithm.\n");
+    return 0;
+}
+
+~~~
 
 
 
 ## Output:
+<img width="1285" height="537" alt="image" src="https://github.com/user-attachments/assets/1d6900fb-f5b4-4eb8-8d06-2329dbd32673" />
 
 
 ## Result:
